@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 20170813125241) do
     t.string   "food"
     t.date     "shelflife"
     t.integer  "count"
-    t.date     "difference"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

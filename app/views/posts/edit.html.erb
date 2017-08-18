@@ -1,4 +1,20 @@
-<h1>식재료를 수정할 화면입니다</h1>
+<link href="//fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	.hanna { font-family: 'hanna'; }
+	.nanum { font-family: 'Nanum Barun Gothic'; }
+	h1 { font: 20px;}
+	</style>
+
+  <P align="center">
+    <img src="http://postfiles1.naver.net/MjAxNzA4MTdfOTQg/MDAxNTAyOTY1MzcxMzcz.oXtetE2cxkP1_RBj3JDbuOq3WaDEhEZvD-nIWgQr22Qg.cSItiss5UNjL9VjE9k9d5S0g3jo_m9JkvovjMpQ9vaEg.PNG.annamon20/main.png?type=w2"
+    style="width: 50%" >
+  </p>
+
+
+<h1 class="hanna" align="center">나의 냉장고</h1>
+
+<h1 align="center">식재료를 수정할 화면입니다</h1>
 <form action="/posts/update/<%= @post.id %>" method="post">
     <p>식재료명</p>
     <input type="text" name="input_food" value="<%= @post.food %>">
