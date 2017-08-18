@@ -4,20 +4,20 @@
   </p>
 
  
-  
+  <center>
 <h1 class="hanna" align="center"><Font color = 4b0082>* 나의 냉장고 *</Font></h1>
 <hr>
 
-<h3 align="center" class="nanumcod">식재료명 : <Font class="seul"><%= @post.food %></Font></h3>
+<h3 class="hanna">식재료명 : <Font class="seul"><%= @post.food %></Font></h3>
 
-<h3 align="center" class="nanumcod">수량 : <Font class="seul"><%= @post.count %></Font></h3>
+<h3 class="hanna">수량 : <Font class="seul"><%= @post.count %></Font></h3>
 
-<h3 align="center" class="nanumcod">유통기한 : <Font class="seul"><%= @post.shelflife %></Font></h3>
+<h3 class="hanna">유통기한 : <Font class="seul"><%= @post.shelflife %></Font></h3>
 
-<h3 align="center" class="nanumcod">유효기간 : <Font class="seul"><%= @due_day %> 일</Font></h3>
+<h3 class="hanna">유효기간 : <Font class="seul"><%= @due_day %> 일</Font></h3>
 
 <hr>
-<h3 align="center" class="hanna">- 식재료 관련 메모 -</h3>
+<h3 class="hanna">- 식재료 관련 메모 -</h3>
 
 <form align="center" action='/posts/show/<%= @post.id %>/comments/create' method='post'>
     <input type='text-area' name='input_comment' required>
@@ -25,7 +25,7 @@
 </form>
 
 <% @comments.each do |comment| %>
-    <p align="center">
+    <p class="seul" align="center">
         -> <%= comment.content %> 
         <a href='/posts/show/<%= @post.id %>/comments/destroy/<%= comment.id %>' 
         data-method='post' 
@@ -44,3 +44,5 @@
 <!--<h3 align="center"><a href="/posts/index">[냉장고로 돌아가기]</a></h3>-->
 <!--<h3 align="center"><a href="/posts/edit/<%= @post.id %>">[수정]</a></h3>-->
 <!--<h3 align="center"><a href="/posts/destroy/<%= @post.id %>" data-confirm="진짜로 삭제 하시겠어요?" data-method="post">[삭제]</a></h3>-->
+
+</center>

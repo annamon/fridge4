@@ -10,7 +10,7 @@
 <center>
 <div class = "box1">
 <% @posts.each do |post| %>
-    <h3 align="center"><a href="/posts/show/<%= post.id %>"><Font color = #000000 size = 5px>식재료명 : 
+    <h3 class="hanna" align="center"><a href="/posts/show/<%= post.id %>"><Font color = #000000 size = 5px>식재료명 : 
     <Font class="seul"><%= post.food %></Font> - 유통기한 : <Font class="seul"><%= post.shelflife %></Font></a></h3>
 <% end %>
 </center>
