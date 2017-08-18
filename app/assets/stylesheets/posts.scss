@@ -1,3 +1,39 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.hanna { font-family: 'hanna'; }
+.nanum { font-family: 'Nanum Barun Gothic'; }
+.gg   {font-family: 'Nanum Pen Script';}
+
+body {background-color :#DEF0F8;}
+    
+.box1 {
+    width : 500px;
+    height : auto;
+    border : 2px solid black;
+    position : relative;
+    }
+h1 { font: 20px;}
+    
+    .hanna { font-family: 'hanna'; }
+	.nanum { font-family: 'Nanum Barun Gothic'; }
+	.jeju { font-family: 'Jeju Hallasan'; }
+
+a {
+    text-decoration: none !important;
+}
+
+button[type=submit]{
+    background-color: #F17A8C;
+    color: white;
+    width: 100px;
+   }
+   
+.box2 {
+    width : 500px;
+    height : auto;
+    border : none;
+    position : relative;
+    }

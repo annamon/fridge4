@@ -58,7 +58,7 @@ class PostsController < ApplicationController
     #한 개의 post를 삭제하는 액션
         @post = Post.find(params[:post_id])
         @post.destroy
-        redirect_to '/'
+        redirect_to '/posts/index'
     end
     
 end

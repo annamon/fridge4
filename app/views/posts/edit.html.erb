@@ -12,16 +12,44 @@
   </p>
 
 
-<h1 class="hanna" align="center">나의 냉장고</h1>
+<form align="center" action="/posts/update/<%= @post.id %>" class="box2 w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" method="post">
+<h2 class="jeju" align="center">식재료 수정하기</h2>
+ 
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-cutlery"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="input_food" type="text" placeholder="식재료명" value="<%= @post.food %>" required>
+    </div>
+</div>
 
-<h1 align="center">식재료를 수정할 화면입니다</h1>
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-shopping-cart"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="input_count" type="number" min="1" max="1000" value="<%= @post.count %>" required>
+    </div>
+</div>
 
-<form align="center" action="/posts/update/<%= @post.id %>" method="post">
-    <p>식재료명</p>
-    <input type="text" name="input_food" value="<%= @post.food %>">
-    <p>수량</p>
-    <input type="number" name="input_count" min="1" max="1000" value="<%= @post.count %>">
-    <p>유통기한</p>
-    <input type="date" name="input_shelflife" value="<%= @post.shelflife %>">
-    <input type="submit" value="추가하기">
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-calendar"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="input_shelflife" type="date" placeholder="유통기한" value="<%= @post.shelflife %>" required>
+    </div>
+</div>
+<br>
+<button class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding">수정하기</button>
+
 </form>
+
+<a href="javascript:history.back()"><i class="w3-xxlarge fa fa-arrow-left w3-container" aria-hidden="true"></i></a>
+
+<!--<h1 align="center">식재료를 수정할 화면입니다</h1>-->
+
+<!--<form align="center" action="/posts/update/<%= @post.id %>" method="post">-->
+<!--    <p>식재료명</p>-->
+<!--    <input type="text" name="input_food" value="<%= @post.food %>">-->
+<!--    <p>수량</p>-->
+<!--    <input type="number" name="input_count" min="1" max="1000" value="<%= @post.count %>">-->
+<!--    <p>유통기한</p>-->
+<!--    <input type="date" name="input_shelflife" value="<%= @post.shelflife %>">-->
+<!--    <input type="submit" value="추가하기">-->
+<!--</form>-->
