@@ -7,31 +7,32 @@
 	</style>
 
   <P align="center">
-    <img src="http://postfiles1.naver.net/MjAxNzA4MTdfOTQg/MDAxNTAyOTY1MzcxMzcz.oXtetE2cxkP1_RBj3JDbuOq3WaDEhEZvD-nIWgQr22Qg.cSItiss5UNjL9VjE9k9d5S0g3jo_m9JkvovjMpQ9vaEg.PNG.annamon20/main.png?type=w2"
+    <img src="http://postfiles4.naver.net/MjAxNzA4MThfMTQ3/MDAxNTAzMDQxMDcxMzMz.PvvtKOHSLRHz3zlKcBvIYWgTGY0gABvzfjQStz7BYSUg.Nzkzc8wSYqur3onCsAJRoe7yNRxrB230AHQD3Lfhbr8g.PNG.412anna/%EB%83%89%EB%B6%80%ED%95%B4.png?type=w2"
     style="width: 50%" >
   </p>
 
 
-<h1></h1>
 
-<h2>식재료명 : <%= @post.food %></h2>
+<h2 align="center">식재료명 : <%= @post.food %></h2>
 
-<p>수량 : <%= @post.count %></p>
+<p align="center">수량 : <%= @post.count %></p>
 
-<p>유통기한 : <%= @post.shelflife %></p>
+<p align="center">유통기한 : <%= @post.shelflife %></p>
 
-<p><%= @post.difference %> 일</p>
+<h1 align="center">유효기간 : <%= @due_day %> 일</h1>
+
 <hr>
-<h3>식재료 관련 메모</h3>
+<h3 align="center">식재료 관련 메모</h3>
 
-<form action='/posts/show/<%= @post.id %>/comments/create' method='post'>
+<form align="center" action='/posts/show/<%= @post.id %>/comments/create' method='post'>
     <input type='text' name='input_comment'>
+    <br>
     <input type='submit'>
 </form>
 
 <hr>
 <% @comments.each do |comment| %>
-    <p>
+    <p align="center">
         -> <%= comment.content %> 
         <a href='/posts/show/<%= @post.id %>/comments/destroy/<%= comment.id %>' 
         data-method='post' 
@@ -42,6 +43,6 @@
 <% end %>
 <hr>
 
-<h3><a href="/posts/index">[냉장고로 돌아가기]</a></h3>
-<h3><a href="/posts/edit/<%= @post.id %>">[수정]</a></h3>
-<h3><a href="/posts/destroy/<%= @post.id %>" data-confirm="진짜로 삭제 하시겠어요?" data-method="post">[삭제]</a></h3>
+<h3 align="center"><a href="/posts/index">[냉장고로 돌아가기]</a></h3>
+<h3 align="center"><a href="/posts/edit/<%= @post.id %>">[수정]</a></h3>
+<h3 align="center"><a href="/posts/destroy/<%= @post.id %>" data-confirm="진짜로 삭제 하시겠어요?" data-method="post">[삭제]</a></h3>
