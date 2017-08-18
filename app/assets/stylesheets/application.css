@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+ 
+@font-face {font-family: 'UhBeeBEOJJI';src: url('UhBeeBEOJJI.eot');}
+@font-face {font-family: 'UhBeeBEOJJI';src: url('UhBeeBEOJJI.woff') format('woff');}
+.article { font-family: "UhBeeBEOJJI", serif;}
+.textarea  {font-family: "UhBeeBEOJJI", serif; }
+
+
+@font-face {font-family: 'UhBeeBongSik';src: url('UhBeeBongSik.eot');}
+@font-face {font-family: 'UhBeeBongSik';src: url('UhBeeBongSik.woff') format('woff');}
+.bong { font-family: "UhBeeBongSik", serif;}
+.bong2  {font-family: "UhBeeBongSik", serif; }
+
+@font-face {font-family: 'UhBeeSeulvely';src: url('UhBeeSeulvely.eot');}
+@font-face {font-family: 'UhBeeSeulvely';src: url('UhBeeSeulvely.woff') format('woff');}
+.seul { font-family: "UhBeeSeulvely", serif;}
+.seul2  {font-family: "UhBeeSeulvely", serif; }

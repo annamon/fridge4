@@ -1,15 +1,17 @@
 
   <P align="center">
     <img src="http://postfiles4.naver.net/MjAxNzA4MThfMTQ3/MDAxNTAzMDQxMDcxMzMz.PvvtKOHSLRHz3zlKcBvIYWgTGY0gABvzfjQStz7BYSUg.Nzkzc8wSYqur3onCsAJRoe7yNRxrB230AHQD3Lfhbr8g.PNG.412anna/%EB%83%89%EB%B6%80%ED%95%B4.png?type=w2"
+    style="width: 50%">
   </p>
   
   
-<h1 class="hanna" align="center">나의 냉장고</h1>
+<h1 class="hanna" align="center"><Font color = 4b0082>* 나의 냉장고 *</Font></h1>
 
 <center>
 <div class = "box1">
 <% @posts.each do |post| %>
-    <h3 class="gg" align="center"><a href="/posts/show/<%= post.id %>"><Font color = #000000 size = 5px>식재료명 : <%= post.food %> - 유통기한 : <%= post.shelflife %></Font></a></h3>
+    <h3 align="center"><a href="/posts/show/<%= post.id %>"><Font color = #000000 size = 5px>식재료명 : 
+    <Font class="seul"><%= post.food %></Font> - 유통기한 : <Font class="seul"><%= post.shelflife %></Font></a></h3>
 <% end %>
 </center>
 </div>

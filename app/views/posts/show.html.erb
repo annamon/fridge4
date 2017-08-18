@@ -1,25 +1,27 @@
   <P align="center">
     <img src="http://postfiles4.naver.net/MjAxNzA4MThfMTQ3/MDAxNTAzMDQxMDcxMzMz.PvvtKOHSLRHz3zlKcBvIYWgTGY0gABvzfjQStz7BYSUg.Nzkzc8wSYqur3onCsAJRoe7yNRxrB230AHQD3Lfhbr8g.PNG.412anna/%EB%83%89%EB%B6%80%ED%95%B4.png?type=w2"
-    style="width: 50%" >
+    style="width: 50%">
   </p>
 
+ 
+  
+<h1 class="hanna" align="center"><Font color = 4b0082>* 나의 냉장고 *</Font></h1>
+<hr>
 
+<h3 align="center" class="nanumcod">식재료명 : <Font class="seul"><%= @post.food %></Font></h3>
 
-<h2 align="center" class="gg">식재료명 : <%= @post.food %></h2>
+<h3 align="center" class="nanumcod">수량 : <Font class="seul"><%= @post.count %></Font></h3>
 
-<h2 align="center" class="gg">수량 : <%= @post.count %></h2>
+<h3 align="center" class="nanumcod">유통기한 : <Font class="seul"><%= @post.shelflife %></Font></h3>
 
-<h2 align="center" class="gg">유통기한 : <%= @post.shelflife %></h2>
-
-<h2 align="center" class="gg">유효기간 : <%= @due_day %> 일</h2>
+<h3 align="center" class="nanumcod">유효기간 : <Font class="seul"><%= @due_day %> 일</Font></h3>
 
 <hr>
-<h3 align="center" class="hanna">식재료 관련 메모</h3>
+<h3 align="center" class="hanna">- 식재료 관련 메모 -</h3>
 
 <form align="center" action='/posts/show/<%= @post.id %>/comments/create' method='post'>
     <input type='text-area' name='input_comment' required>
-    <br>
-    <input type='submit'value="등록">
+     <input type='submit'value="등록">
 </form>
 
 <% @comments.each do |comment| %>
